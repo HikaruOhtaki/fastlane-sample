@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9FBBB376276BA5CE00D09432 /* fastlane-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fastlane-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FBBB376276BA5CE00D09432 /* MyToDo.dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToDo.dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBBB379276BA5CE00D09432 /* fastlane_sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastlane_sampleApp.swift; sourceTree = "<group>"; };
 		9FBBB37B276BA5CE00D09432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9FBBB37D276BA5CF00D09432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		9FBBB377276BA5CE00D09432 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9FBBB376276BA5CE00D09432 /* fastlane-sample.app */,
+				9FBBB376276BA5CE00D09432 /* MyToDo.dev.app */,
 				9FBBB386276BA5CF00D09432 /* fastlane-sampleTests.xctest */,
 				9FBBB390276BA5CF00D09432 /* fastlane-sampleUITests.xctest */,
 			);
@@ -144,7 +144,7 @@
 			);
 			name = "fastlane-sample";
 			productName = "fastlane-sample";
-			productReference = 9FBBB376276BA5CE00D09432 /* fastlane-sample.app */;
+			productReference = 9FBBB376276BA5CE00D09432 /* MyToDo.dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9FBBB385276BA5CF00D09432 /* fastlane-sampleTests */ = {
@@ -431,9 +431,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ohtaki.fastlane-sample";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyToDo.dev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,9 +460,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ohtaki.fastlane-sample";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyToDo;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

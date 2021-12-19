@@ -1,0 +1,19 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "deploy beta to appstore"
+  lane :beta do
+    build_app(scheme: "fastlane-sample")
+
+    api_key = app_store_connect_api_key(
+      key_id: "FF9M3UX5LN",
+      issuer_id: "1158e62a-2a94-4b61-8cb1-ced7de58368e",
+      key_filepath: "~/private_keys/AuthKey_FF9M3UX5LN.p8",
+      duration: 180,
+      in_house: false
+    )
+
+    upload_to_testflight(api_key: api_key)
+  end
+end
+
