@@ -13,6 +13,25 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 # Available Actions
 
+### register_new_devices
+
+```sh
+[bundle exec] fastlane register_new_devices
+```
+
+Register Devices
+
+### match_after_register
+
+```sh
+[bundle exec] fastlane match_after_register
+```
+
+match_after_register
+
+----
+
+
 ## iOS
 
 ### ios beta

@@ -17,3 +17,18 @@ platform :ios do
   end
 end
 
+
+desc "register devices"
+lane :register_new_devices do
+  # see the Apple Sample (http://devimages.apple.com/downloads/devices/Multiple-Upload-Samples.zip)
+  register_devices(
+    devices_file: "./fastlane/devices.txt",
+    team_id: "YFYG54KA39"
+  )
+  match_after_register
+end
+
+desc "match_after_register"
+lane :match_after_register do
+  match(type: "development", force_for_new_devices: true)
+end
