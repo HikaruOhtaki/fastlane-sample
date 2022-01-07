@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F7695C5278843ED00506280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9FBBB376276BA5CE00D09432 /* MyToDo.dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToDo.dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBBB379276BA5CE00D09432 /* fastlane_sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastlane_sampleApp.swift; sourceTree = "<group>"; };
 		9FBBB37B276BA5CE00D09432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		9FBBB378276BA5CE00D09432 /* fastlane-sample */ = {
 			isa = PBXGroup;
 			children = (
+				9F7695C5278843ED00506280 /* Info.plist */,
 				9FBBB379276BA5CE00D09432 /* fastlane_sampleApp.swift */,
 				9FBBB37B276BA5CE00D09432 /* ContentView.swift */,
 				9FBBB37D276BA5CF00D09432 /* Assets.xcassets */,
@@ -423,7 +425,7 @@
 				DEVELOPMENT_TEAM = YFYG54KA39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "fastlane-sample/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -455,7 +457,7 @@
 				DEVELOPMENT_TEAM = YFYG54KA39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "fastlane-sample/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
