@@ -29,6 +29,14 @@ platform :ios do
       use_automatic_signing: false
     )
 
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      path: "fastlane-sample.xcodeproj",
+      team_id: "YFYG54KA39",
+      bundle_identifier: "ohtaki.fastlane-sample",
+      profile_name: "match AppStore ohtaki.fastlane-sample",
+    )
+
     match(
       git_basic_authorization: Base64.strict_encode64(authorization_token_str),
       api_key: api_key,
