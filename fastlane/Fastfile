@@ -28,7 +28,7 @@ platform :ios do
     basic_authorization_token = Base64.strict_encode64(authorization_token_str)
 
     match(
-      git_basic_authorization: basic_authorization_token,
+      git_basic_authorization: "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",
       api_key: api_key,
       app_identifier: "ohtaki.fastlane-sample",
       type: "appstore",
