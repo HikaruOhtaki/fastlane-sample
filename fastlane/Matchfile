@@ -2,7 +2,7 @@ git_url("git@github.com:HikaruOhtaki/fastlane-sample.git")
 
 storage_mode("git")
 
-type("development")
+type("appstore")
 
 app_identifier("ohtaki.fastlane-sample")
 username("hikaru.11.oth@icloud.com")
