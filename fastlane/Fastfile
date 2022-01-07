@@ -44,7 +44,12 @@ platform :ios do
 
     build_app(scheme: "fastlane-sample")
 
-    upload_to_testflight(api_key: api_key)
+    upload_to_testflight(
+      api_key: api_key,
+      notify_external_testers: false,
+      changelog: "This is my changelog of things that have changed in a log",
+      skip_waiting_for_build_processing: true
+    )
   end
 end
 
