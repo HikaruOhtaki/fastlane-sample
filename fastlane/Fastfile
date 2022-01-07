@@ -22,8 +22,6 @@ platform :ios do
       in_house: false
     )
 
-    disable_automatic_code_signing
-
     authorization_token_str = "HikaruOhtaki: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"
 
     match(
