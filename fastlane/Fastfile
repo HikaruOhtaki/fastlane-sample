@@ -24,11 +24,11 @@ platform :ios do
 
     username = "HikaruOhtaki"
     personal_github_access_token = "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"
-    authorization_token_str = "#{username}:#{personal_github_access_token}"
+    authorization_token_str = "HikaruOhtaki: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"
     basic_authorization_token = Base64.strict_encode64(authorization_token_str)
 
     match(
-      git_basic_authorization: basic_authorization_token,
+      git_basic_authorization: Base64.strict_encode64(authorization_token_str),
       api_key: api_key,
       app_identifier: "ohtaki.fastlane-sample",
       type: "appstore",
