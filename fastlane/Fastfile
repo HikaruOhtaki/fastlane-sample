@@ -3,14 +3,6 @@ default_platform(:ios)
 platform :ios do
   desc "deploy beta to appstore"
   lane :beta do
-    setup_ci(provider: "travis")
-
-    create_keychain(
-      name: ENV['MATCH_KEYCHAIN_NAME'],
-      password: ENV['MATCH_KEYCHAIN_PASSWORD'],
-      timeout: 1800
-    )
-
     api_key = app_store_connect_api_key(
       key_id: "HU2JCWXK59",
       issuer_id: "1158e62a-2a94-4b61-8cb1-ced7de58368e",
@@ -27,18 +19,27 @@ platform :ios do
     update_code_signing_settings(
       use_automatic_signing: false,
       path: "fastlane-sample.xcodeproj",
+      targets: "fastlane-sample",
       team_id: "YFYG54KA39",
       bundle_identifier: "ohtaki.fastlane-sample",
       profile_name: "match AppStore ohtaki.fastlane-sample",
     )
 
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      path: "fastlane-sample.xcodeproj",
+      targets: "NotificationService",
+      team_id: "YFYG54KA39",
+      bundle_identifier: "ohtaki.fastlane-sample.NotificationService",
+      profile_name: "match AppStore ohtaki.fastlane-sample.NotificationService",
+    )
+
+
     match(
       git_basic_authorization: Base64.strict_encode64(authorization_token_str),
       api_key: api_key,
-      app_identifier: "ohtaki.fastlane-sample",
+      app_identifier: ["ohtaki.fastlane-sample","ohtaki.fastlane-sample.NotificationService"],
       type: "appstore",
-      keychain_name: ENV['MATCH_KEYCHAIN_NAME'],
-      keychain_password: ENV['MATCH_KEYCHAIN_PASSWORD'],
       readonly: true
     )
 
@@ -46,7 +47,6 @@ platform :ios do
 
     upload_to_testflight(
       api_key: api_key,
-      notify_external_testers: false,
       changelog: "This is my changelog of things that have changed in a log",
       skip_waiting_for_build_processing: true
     )

@@ -1,8 +1,8 @@
-git_url("https://github.com/HikaruOhtaki/fastlane-sample-certificates.git")
+git_url("https://github.com/HikaruOhtaki/fastlane-sample-certificates")
 
 storage_mode("git")
 
 type("appstore")
 
-app_identifier("ohtaki.fastlane-sample")
+app_identifier(["ohtaki.fastlane-sample", "ohtaki.fastlane-sample.NotificationService"])
 username("hikaru.11.oth@icloud.com")
