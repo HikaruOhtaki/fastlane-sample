@@ -24,11 +24,6 @@ platform :ios do
 
     authorization_token_str = "HikaruOhtaki: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"
 
-    automatic_code_signing(
-      path: "fastlane-sample.xcodeproj",
-      use_automatic_signing: false
-    )
-
     update_code_signing_settings(
       use_automatic_signing: false,
       path: "fastlane-sample.xcodeproj",
