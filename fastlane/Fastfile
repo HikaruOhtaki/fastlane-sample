@@ -3,6 +3,7 @@ default_platform(:ios)
 platform :ios do
   desc "deploy beta to appstore"
   lane :beta do
+    setup_ci(provider: "travis")
 
     create_keychain(
       name: ENV['MATCH_KEYCHAIN_NAME'],
