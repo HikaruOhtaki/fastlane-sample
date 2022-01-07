@@ -19,7 +19,7 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 [bundle exec] fastlane register_new_devices
 ```
 
-Register Devices
+register devices
 
 ### match_after_register
 
