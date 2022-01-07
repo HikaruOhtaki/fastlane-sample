@@ -13,6 +13,12 @@ jobs:
       - name: create AppStoreConnect AuthKey
         run: |
           mkdir ~/private_keys; echo "${{ secrets.ASC_API_KEY }}" | base64 -d > ~/private_keys/AuthKey_$ASC_KEY_ID.p8
-          
+
       - name: Deploy Testflight
         run: fastlane beta
+        env:
+          MATCH_KEYCHAIN_NAME: "KEYCHAIN"
+          MATCH_KEYCHAIN_PASSWORD: "19990220"
+          PERSONAL_GITHUB_ACCESS_TOKEN: "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"
+          USERNAME: "HikaruOhtaki"
+        PERSONAL_GITHUB_ACCESS_TOKEN: ${{ secrets.PERSONAL_GITHUB_ACCESS_TOKEN }}
