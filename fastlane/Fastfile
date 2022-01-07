@@ -20,7 +20,6 @@ end
 
 desc "register devices"
 lane :register_new_devices do
-  # see the Apple Sample (http://devimages.apple.com/downloads/devices/Multiple-Upload-Samples.zip)
   register_devices(
     devices_file: "./fastlane/devices.txt",
     team_id: "YFYG54KA39"
