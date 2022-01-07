@@ -3,6 +3,13 @@ default_platform(:ios)
 platform :ios do
   desc "deploy beta to appstore"
   lane :beta do
+    setup_ci(provider: "travis")
+
+    create_keychain(
+      name: ENV['MATCH_KEYCHAIN_NAME'],
+      password: ENV['MATCH_KEYCHAIN_PASSWORD'],
+      timeout: 1800
+    )
 
     api_key = app_store_connect_api_key(
       key_id: "HU2JCWXK59",
@@ -17,11 +24,18 @@ platform :ios do
 
     authorization_token_str = "HikaruOhtaki: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"
 
+    automatic_code_signing(
+      path: "fastlane-sample.xcodeproj",
+      use_automatic_signing: false
+    )
+
     match(
       git_basic_authorization: Base64.strict_encode64(authorization_token_str),
       api_key: api_key,
       app_identifier: "ohtaki.fastlane-sample",
       type: "appstore",
+      keychain_name: ENV['MATCH_KEYCHAIN_NAME'],
+      keychain_password: ENV['MATCH_KEYCHAIN_PASSWORD'],
       readonly: true
     )
 
