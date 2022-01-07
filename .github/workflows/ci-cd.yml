@@ -20,4 +20,5 @@ jobs:
           MATCH_KEYCHAIN_PASSWORD: "19990220"
           PERSONAL_GITHUB_ACCESS_TOKEN: "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"
           USERNAME: "HikaruOhtaki"
+          MATCH_PASSWORD: '${{ secrets.MATCH_PASSWORD }}'
         run: fastlane beta
