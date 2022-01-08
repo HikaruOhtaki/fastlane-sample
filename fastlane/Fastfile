@@ -28,6 +28,7 @@ platform :ios do
       path: "fastlane-sample.xcodeproj",
       targets: "fastlane-sample",
       team_id: "YFYG54KA39",
+      code_sign_identity: "iPhone Distribution",
       bundle_identifier: "ohtaki.fastlane-sample",
       profile_name: "match AppStore ohtaki.fastlane-sample",
     )
@@ -37,6 +38,7 @@ platform :ios do
       path: "fastlane-sample.xcodeproj",
       targets: "NotificationService",
       team_id: "YFYG54KA39",
+      code_sign_identity: "iPhone Distribution",
       bundle_identifier: "ohtaki.fastlane-sample.NotificationService",
       profile_name: "match AppStore ohtaki.fastlane-sample.NotificationService",
     )
@@ -45,7 +47,7 @@ platform :ios do
     match(
       git_basic_authorization: Base64.strict_encode64(authorization_token_str),
       api_key: api_key,
-      app_identifier: "ohtaki.fastlane-sample",
+      app_identifier: ["ohtaki.fastlane-sample", "ohtaki.fastlane-sample.NotificationService"],
       type: "appstore",
       readonly: true,
       keychain_name: "ohtaki",
