@@ -25,6 +25,7 @@
 		9FACF4AB27888FD2001263B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FACF4A927888FD2001263B4 /* GoogleService-Info.plist */; };
 		9FACF4D02788B913001263B4 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7695CC27886BF700506280 /* NotificationService.swift */; };
 		9FACF4D22788B913001263B4 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9FACF4CD2788B913001263B4 /* FirebaseMessaging */; };
+		9FACF4D92789F693001263B4 /* NotificationServiceStg.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FACF4D72788B913001263B4 /* NotificationServiceStg.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9FBBB37A276BA5CE00D09432 /* fastlane_sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBBB379276BA5CE00D09432 /* fastlane_sampleApp.swift */; };
 		9FBBB37C276BA5CE00D09432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBBB37B276BA5CE00D09432 /* ContentView.swift */; };
 		9FBBB37E276BA5CF00D09432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBBB37D276BA5CF00D09432 /* Assets.xcassets */; };
@@ -48,6 +49,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9F7695C927886BF700506280;
 			remoteInfo = NotificationService;
+		};
+		9FACF4DA2789F693001263B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FBBB36E276BA5CE00D09432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FACF4CC2788B913001263B4;
+			remoteInfo = NotificationServiceStg;
 		};
 		9FBBB387276BA5CF00D09432 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -83,6 +91,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				9FACF4D92789F693001263B4 /* NotificationServiceStg.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +301,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9FACF4DB2789F693001263B4 /* PBXTargetDependency */,
 			);
 			name = "fastlane-sample-stg";
 			packageProductDependencies = (
@@ -592,6 +602,11 @@
 			target = 9F7695C927886BF700506280 /* NotificationService */;
 			targetProxy = 9F7695CF27886BF800506280 /* PBXContainerItemProxy */;
 		};
+		9FACF4DB2789F693001263B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FACF4CC2788B913001263B4 /* NotificationServiceStg */;
+			targetProxy = 9FACF4DA2789F693001263B4 /* PBXContainerItemProxy */;
+		};
 		9FBBB388276BA5CF00D09432 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9FBBB375276BA5CE00D09432 /* fastlane-sample */;
@@ -752,7 +767,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ohtaki.fastlane-sample.NotificationServiceStg";
+				PRODUCT_BUNDLE_IDENTIFIER = "ohtaki.fastlane-sample.stg.NotificationServiceStg";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -781,7 +796,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ohtaki.fastlane-sample.NotificationServiceStg";
+				PRODUCT_BUNDLE_IDENTIFIER = "ohtaki.fastlane-sample.stg.NotificationServiceStg";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -916,7 +931,7 @@
 				CODE_SIGN_ENTITLEMENTS = "fastlane-sample/fastlane-sample.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"fastlane-sample/Preview Content\"";
 				DEVELOPMENT_TEAM = YFYG54KA39;
 				ENABLE_PREVIEWS = YES;
@@ -951,7 +966,7 @@
 				CODE_SIGN_ENTITLEMENTS = "fastlane-sample/fastlane-sampleRelease.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"fastlane-sample/Preview Content\"";
 				DEVELOPMENT_TEAM = YFYG54KA39;
 				ENABLE_PREVIEWS = YES;
