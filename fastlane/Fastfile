@@ -21,7 +21,8 @@ platform :ios do
       in_house: false
     )
 
-    authorization_token_str = "HikaruOhtaki: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"
+    personal_access_token = ENV["PERSONAL_GITHUB_ACCESS_TOKEN"]
+    authorization_token_str = "HikaruOhtaki:#{personal_access_token}"
 
     update_code_signing_settings(
       use_automatic_signing: false,
