@@ -21,11 +21,13 @@
 		9FACF49E27888DC4001263B4 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9FACF49227888DC4001263B4 /* FirebaseFunctionsCombine-Community */; };
 		9FACF4A027888DC4001263B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBBB380276BA5CF00D09432 /* Preview Assets.xcassets */; };
 		9FACF4A127888DC4001263B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBBB37D276BA5CF00D09432 /* Assets.xcassets */; };
-		9FACF4AA27888FD2001263B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FACF4A927888FD2001263B4 /* GoogleService-Info.plist */; };
-		9FACF4AB27888FD2001263B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FACF4A927888FD2001263B4 /* GoogleService-Info.plist */; };
+		9FACF4AA27888FD2001263B4 /* GoogleService-Info-stg.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FACF4A927888FD2001263B4 /* GoogleService-Info-stg.plist */; };
+		9FACF4AB27888FD2001263B4 /* GoogleService-Info-stg.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FACF4A927888FD2001263B4 /* GoogleService-Info-stg.plist */; };
 		9FACF4D02788B913001263B4 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7695CC27886BF700506280 /* NotificationService.swift */; };
 		9FACF4D22788B913001263B4 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9FACF4CD2788B913001263B4 /* FirebaseMessaging */; };
 		9FACF4D92789F693001263B4 /* NotificationServiceStg.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FACF4D72788B913001263B4 /* NotificationServiceStg.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9FACF4DD278A04FE001263B4 /* GoogleService-Info-prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FACF4DC278A04FE001263B4 /* GoogleService-Info-prod.plist */; };
+		9FACF4DE278A0504001263B4 /* GoogleService-Info-prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FACF4DC278A04FE001263B4 /* GoogleService-Info-prod.plist */; };
 		9FBBB37A276BA5CE00D09432 /* fastlane_sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBBB379276BA5CE00D09432 /* fastlane_sampleApp.swift */; };
 		9FBBB37C276BA5CE00D09432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBBB37B276BA5CE00D09432 /* ContentView.swift */; };
 		9FBBB37E276BA5CF00D09432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBBB37D276BA5CF00D09432 /* Assets.xcassets */; };
@@ -107,8 +109,9 @@
 		9F7695D727886C8500506280 /* fastlane-sampleRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "fastlane-sampleRelease.entitlements"; sourceTree = "<group>"; };
 		9F7695D827886C9100506280 /* fastlane-sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "fastlane-sample.entitlements"; sourceTree = "<group>"; };
 		9FACF4A727888DC4001263B4 /* fastlane-sample-stg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fastlane-sample-stg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FACF4A927888FD2001263B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9FACF4A927888FD2001263B4 /* GoogleService-Info-stg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-stg.plist"; sourceTree = "<group>"; };
 		9FACF4D72788B913001263B4 /* NotificationServiceStg.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceStg.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FACF4DC278A04FE001263B4 /* GoogleService-Info-prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-prod.plist"; sourceTree = "<group>"; };
 		9FBBB376276BA5CE00D09432 /* MyToDo.dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToDo.dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBBB379276BA5CE00D09432 /* fastlane_sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastlane_sampleApp.swift; sourceTree = "<group>"; };
 		9FBBB37B276BA5CE00D09432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -228,7 +231,8 @@
 		9FBBB378276BA5CE00D09432 /* fastlane-sample */ = {
 			isa = PBXGroup;
 			children = (
-				9FACF4A927888FD2001263B4 /* GoogleService-Info.plist */,
+				9FACF4DC278A04FE001263B4 /* GoogleService-Info-prod.plist */,
+				9FACF4A927888FD2001263B4 /* GoogleService-Info-stg.plist */,
 				9F7695D827886C9100506280 /* fastlane-sample.entitlements */,
 				9F7695D727886C8500506280 /* fastlane-sampleRelease.entitlements */,
 				9F7695C5278843ED00506280 /* Info.plist */,
@@ -467,7 +471,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FACF4A027888DC4001263B4 /* Preview Assets.xcassets in Resources */,
-				9FACF4AB27888FD2001263B4 /* GoogleService-Info.plist in Resources */,
+				9FACF4DE278A0504001263B4 /* GoogleService-Info-prod.plist in Resources */,
+				9FACF4AB27888FD2001263B4 /* GoogleService-Info-stg.plist in Resources */,
 				9FACF4A127888DC4001263B4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,7 +489,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FBBB381276BA5CF00D09432 /* Preview Assets.xcassets in Resources */,
-				9FACF4AA27888FD2001263B4 /* GoogleService-Info.plist in Resources */,
+				9FACF4DD278A04FE001263B4 /* GoogleService-Info-prod.plist in Resources */,
+				9FACF4AA27888FD2001263B4 /* GoogleService-Info-stg.plist in Resources */,
 				9FBBB37E276BA5CF00D09432 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,7 +527,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp \"${PROJECT_DIR}/${PROJECT_NAME}/GoogleService-Info.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n";
+			shellScript = "cp \"${PROJECT_DIR}/${PROJECT_NAME}/GoogleService-Info-prod.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n";
 		};
 		9FACF4AD2788908D001263B4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -538,7 +544,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp \"${PROJECT_DIR}/${PROJECT_NAME}/GoogleService-Info.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n";
+			shellScript = "cp \"${PROJECT_DIR}/${PROJECT_NAME}/GoogleService-Info-stg.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

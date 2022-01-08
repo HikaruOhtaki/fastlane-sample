@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>561793101798-vjj7epu60ca0m72ael0aft3hvam2udui.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.561793101798-vjj7epu60ca0m72ael0aft3hvam2udui</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBOl-vm5qvc1mF8L4DgMGHBGB8x2LD_KOQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>561793101798</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ohtaki.fastlane-sample</string>
+	<key>PROJECT_ID</key>
+	<string>luup-mydev</string>
+	<key>STORAGE_BUCKET</key>
+	<string>luup-mydev.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:561793101798:ios:ace7365b648dd187343027</string>
+</dict>
+</plist>
