@@ -47,7 +47,9 @@ platform :ios do
       api_key: api_key,
       app_identifier: ["ohtaki.fastlane-sample","ohtaki.fastlane-sample.NotificationService"],
       type: "appstore",
-      readonly: true
+      readonly: true,
+      keychain_name: "ohtaki",
+      keychain_password: "19990220",
     )
 
     build_app(scheme: "fastlane-sample")
