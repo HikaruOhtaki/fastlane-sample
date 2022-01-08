@@ -916,7 +916,7 @@
 				CODE_SIGN_ENTITLEMENTS = "fastlane-sample/fastlane-sample.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"fastlane-sample/Preview Content\"";
 				DEVELOPMENT_TEAM = YFYG54KA39;
 				ENABLE_PREVIEWS = YES;
@@ -951,7 +951,7 @@
 				CODE_SIGN_ENTITLEMENTS = "fastlane-sample/fastlane-sampleRelease.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"fastlane-sample/Preview Content\"";
 				DEVELOPMENT_TEAM = YFYG54KA39;
 				ENABLE_PREVIEWS = YES;
