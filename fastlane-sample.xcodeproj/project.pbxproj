@@ -28,6 +28,13 @@
 		9FACF4D92789F693001263B4 /* NotificationServiceStg.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FACF4D72788B913001263B4 /* NotificationServiceStg.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9FACF4DD278A04FE001263B4 /* GoogleService-Info-prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FACF4DC278A04FE001263B4 /* GoogleService-Info-prod.plist */; };
 		9FACF4DE278A0504001263B4 /* GoogleService-Info-prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FACF4DC278A04FE001263B4 /* GoogleService-Info-prod.plist */; };
+		9FACF4E5278A9141001263B4 /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FACF4E4278A9141001263B4 /* GoogleMapView.swift */; };
+		9FACF4E6278A9141001263B4 /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FACF4E4278A9141001263B4 /* GoogleMapView.swift */; };
+		9FACF4E9278A91EB001263B4 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 9FACF4E8278A91EB001263B4 /* GoogleMaps */; };
+		9FACF4EB278A91EB001263B4 /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = 9FACF4EA278A91EB001263B4 /* GoogleMapsBase */; };
+		9FACF4ED278A91EB001263B4 /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9FACF4EC278A91EB001263B4 /* GoogleMapsCore */; };
+		9FACF4EF278A91EB001263B4 /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = 9FACF4EE278A91EB001263B4 /* GoogleMapsM4B */; };
+		9FACF4F1278A91EB001263B4 /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 9FACF4F0278A91EB001263B4 /* GooglePlaces */; };
 		9FBBB37A276BA5CE00D09432 /* fastlane_sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBBB379276BA5CE00D09432 /* fastlane_sampleApp.swift */; };
 		9FBBB37C276BA5CE00D09432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBBB37B276BA5CE00D09432 /* ContentView.swift */; };
 		9FBBB37E276BA5CF00D09432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBBB37D276BA5CF00D09432 /* Assets.xcassets */; };
@@ -42,6 +49,15 @@
 		9FDCCA81278885360056B717 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 9FDCCA80278885360056B717 /* FirebaseFunctions */; };
 		9FDCCA83278885360056B717 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9FDCCA82278885360056B717 /* FirebaseFunctionsCombine-Community */; };
 		9FDCCA85278885360056B717 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9FDCCA84278885360056B717 /* FirebaseMessaging */; };
+		9FE4265E278A938D00E32464 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE4265D278A938D00E32464 /* GoogleMaps */; };
+		9FE42660278A938D00E32464 /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE4265F278A938D00E32464 /* GoogleMapsBase */; };
+		9FE42662278A938D00E32464 /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE42661278A938D00E32464 /* GoogleMapsCore */; };
+		9FE42664278A938D00E32464 /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE42663278A938D00E32464 /* GoogleMapsM4B */; };
+		9FE42666278A938D00E32464 /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE42665278A938D00E32464 /* GooglePlaces */; };
+		9FE42668278AB78300E32464 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FE42667278AB78300E32464 /* key.plist */; };
+		9FE42669278AB78300E32464 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FE42667278AB78300E32464 /* key.plist */; };
+		9FE4266B278AB7D500E32464 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4266A278AB7D500E32464 /* KeyManager.swift */; };
+		9FE4266C278AB7D500E32464 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4266A278AB7D500E32464 /* KeyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +128,7 @@
 		9FACF4A927888FD2001263B4 /* GoogleService-Info-stg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-stg.plist"; sourceTree = "<group>"; };
 		9FACF4D72788B913001263B4 /* NotificationServiceStg.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceStg.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FACF4DC278A04FE001263B4 /* GoogleService-Info-prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-prod.plist"; sourceTree = "<group>"; };
+		9FACF4E4278A9141001263B4 /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
 		9FBBB376276BA5CE00D09432 /* MyToDo.dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToDo.dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBBB379276BA5CE00D09432 /* fastlane_sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastlane_sampleApp.swift; sourceTree = "<group>"; };
 		9FBBB37B276BA5CE00D09432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +139,8 @@
 		9FBBB390276BA5CF00D09432 /* fastlane-sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fastlane-sampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBBB394276BA5CF00D09432 /* fastlane_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastlane_sampleUITests.swift; sourceTree = "<group>"; };
 		9FBBB396276BA5CF00D09432 /* fastlane_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastlane_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FE42667278AB78300E32464 /* key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = key.plist; sourceTree = "<group>"; };
+		9FE4266A278AB7D500E32464 /* KeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,11 +156,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE4265E278A938D00E32464 /* GoogleMaps in Frameworks */,
+				9FE42664278A938D00E32464 /* GoogleMapsM4B in Frameworks */,
 				9FACF49827888DC4001263B4 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				9FACF49927888DC4001263B4 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				9FE42660278A938D00E32464 /* GoogleMapsBase in Frameworks */,
 				9FACF49A27888DC4001263B4 /* FirebaseMessaging in Frameworks */,
+				9FE42662278A938D00E32464 /* GoogleMapsCore in Frameworks */,
 				9FACF49B27888DC4001263B4 /* FirebaseFunctions in Frameworks */,
 				9FACF49C27888DC4001263B4 /* FirebaseAuth in Frameworks */,
+				9FE42666278A938D00E32464 /* GooglePlaces in Frameworks */,
 				9FACF49D27888DC4001263B4 /* FirebaseFirestore in Frameworks */,
 				9FACF49E27888DC4001263B4 /* FirebaseFunctionsCombine-Community in Frameworks */,
 			);
@@ -164,7 +188,12 @@
 				9FDCCA85278885360056B717 /* FirebaseMessaging in Frameworks */,
 				9FDCCA81278885360056B717 /* FirebaseFunctions in Frameworks */,
 				9FDCCA79278885360056B717 /* FirebaseAuth in Frameworks */,
+				9FACF4EB278A91EB001263B4 /* GoogleMapsBase in Frameworks */,
+				9FACF4EF278A91EB001263B4 /* GoogleMapsM4B in Frameworks */,
+				9FACF4E9278A91EB001263B4 /* GoogleMaps in Frameworks */,
 				9FDCCA7B278885360056B717 /* FirebaseFirestore in Frameworks */,
+				9FACF4F1278A91EB001263B4 /* GooglePlaces in Frameworks */,
+				9FACF4ED278A91EB001263B4 /* GoogleMapsCore in Frameworks */,
 				9FDCCA83278885360056B717 /* FirebaseFunctionsCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,8 +265,11 @@
 				9F7695D827886C9100506280 /* fastlane-sample.entitlements */,
 				9F7695D727886C8500506280 /* fastlane-sampleRelease.entitlements */,
 				9F7695C5278843ED00506280 /* Info.plist */,
+				9FE42667278AB78300E32464 /* key.plist */,
 				9FBBB379276BA5CE00D09432 /* fastlane_sampleApp.swift */,
 				9FBBB37B276BA5CE00D09432 /* ContentView.swift */,
+				9FACF4E4278A9141001263B4 /* GoogleMapView.swift */,
+				9FE4266A278AB7D500E32464 /* KeyManager.swift */,
 				9FBBB37D276BA5CF00D09432 /* Assets.xcassets */,
 				9FBBB37F276BA5CF00D09432 /* Preview Content */,
 			);
@@ -316,6 +348,11 @@
 				9FACF49127888DC4001263B4 /* FirebaseFunctions */,
 				9FACF49227888DC4001263B4 /* FirebaseFunctionsCombine-Community */,
 				9FACF49327888DC4001263B4 /* FirebaseMessaging */,
+				9FE4265D278A938D00E32464 /* GoogleMaps */,
+				9FE4265F278A938D00E32464 /* GoogleMapsBase */,
+				9FE42661278A938D00E32464 /* GoogleMapsCore */,
+				9FE42663278A938D00E32464 /* GoogleMapsM4B */,
+				9FE42665278A938D00E32464 /* GooglePlaces */,
 			);
 			productName = "fastlane-sample";
 			productReference = 9FACF4A727888DC4001263B4 /* fastlane-sample-stg.app */;
@@ -365,6 +402,11 @@
 				9FDCCA80278885360056B717 /* FirebaseFunctions */,
 				9FDCCA82278885360056B717 /* FirebaseFunctionsCombine-Community */,
 				9FDCCA84278885360056B717 /* FirebaseMessaging */,
+				9FACF4E8278A91EB001263B4 /* GoogleMaps */,
+				9FACF4EA278A91EB001263B4 /* GoogleMapsBase */,
+				9FACF4EC278A91EB001263B4 /* GoogleMapsCore */,
+				9FACF4EE278A91EB001263B4 /* GoogleMapsM4B */,
+				9FACF4F0278A91EB001263B4 /* GooglePlaces */,
 			);
 			productName = "fastlane-sample";
 			productReference = 9FBBB376276BA5CE00D09432 /* MyToDo.dev.app */;
@@ -443,6 +485,7 @@
 			mainGroup = 9FBBB36D276BA5CE00D09432;
 			packageReferences = (
 				9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */,
 			);
 			productRefGroup = 9FBBB377276BA5CE00D09432 /* Products */;
 			projectDirPath = "";
@@ -474,6 +517,7 @@
 				9FACF4DE278A0504001263B4 /* GoogleService-Info-prod.plist in Resources */,
 				9FACF4AB27888FD2001263B4 /* GoogleService-Info-stg.plist in Resources */,
 				9FACF4A127888DC4001263B4 /* Assets.xcassets in Resources */,
+				9FE42669278AB78300E32464 /* key.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +536,7 @@
 				9FACF4DD278A04FE001263B4 /* GoogleService-Info-prod.plist in Resources */,
 				9FACF4AA27888FD2001263B4 /* GoogleService-Info-stg.plist in Resources */,
 				9FBBB37E276BA5CF00D09432 /* Assets.xcassets in Resources */,
+				9FE42668278AB78300E32464 /* key.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,8 +606,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FACF4E6278A9141001263B4 /* GoogleMapView.swift in Sources */,
 				9FACF49527888DC4001263B4 /* ContentView.swift in Sources */,
 				9FACF49627888DC4001263B4 /* fastlane_sampleApp.swift in Sources */,
+				9FE4266C278AB7D500E32464 /* KeyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,8 +625,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FACF4E5278A9141001263B4 /* GoogleMapView.swift in Sources */,
 				9FBBB37C276BA5CE00D09432 /* ContentView.swift in Sources */,
 				9FBBB37A276BA5CE00D09432 /* fastlane_sampleApp.swift in Sources */,
+				9FE4266B278AB7D500E32464 /* KeyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1023,7 +1072,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fastlane-sample.app/fastlane-sample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyToDo.dev.app/MyToDo.dev";
 			};
 			name = Debug;
 		};
@@ -1052,7 +1101,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fastlane-sample.app/fastlane-sample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyToDo.dev.app/MyToDo.dev";
 			};
 			name = Release;
 		};
@@ -1195,6 +1244,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/YAtechnologies/GoogleMaps-SP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -1251,6 +1308,31 @@
 			package = 9FACF4CE2788B913001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
 		};
+		9FACF4E8278A91EB001263B4 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMaps;
+		};
+		9FACF4EA278A91EB001263B4 /* GoogleMapsBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMapsBase;
+		};
+		9FACF4EC278A91EB001263B4 /* GoogleMapsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMapsCore;
+		};
+		9FACF4EE278A91EB001263B4 /* GoogleMapsM4B */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMapsM4B;
+		};
+		9FACF4F0278A91EB001263B4 /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GooglePlaces;
+		};
 		9FDCCA78278885360056B717 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -1285,6 +1367,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
+		};
+		9FE4265D278A938D00E32464 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMaps;
+		};
+		9FE4265F278A938D00E32464 /* GoogleMapsBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMapsBase;
+		};
+		9FE42661278A938D00E32464 /* GoogleMapsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMapsCore;
+		};
+		9FE42663278A938D00E32464 /* GoogleMapsM4B */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMapsM4B;
+		};
+		9FE42665278A938D00E32464 /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GooglePlaces;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

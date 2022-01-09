@@ -14,5 +14,7 @@
 		<key>UIImageName</key>
 		<string>trending_up</string>
 	</dict>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>このアプリは位置情報を取得します</string>
 </dict>
 </plist>

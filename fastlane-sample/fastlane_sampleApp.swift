@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Firebase
+import GoogleMaps
 
 @main
 struct fastlane_sampleApp: App {
@@ -22,7 +23,7 @@ struct fastlane_sampleApp: App {
                         return
                     }
                     
-                    print(snapshot?.data())
+                    print(snapshot?.data() as Any)
                 }
             }
         }
@@ -32,6 +33,9 @@ struct fastlane_sampleApp: App {
 class AppDelegate: NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        if let googleMapsApiKey = KeyManager().getValue(key: "GoogleMapsApiKey") as? String {
+            GMSServices.provideAPIKey(googleMapsApiKey)
+        }
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
         if #available(iOS 10.0, *) {

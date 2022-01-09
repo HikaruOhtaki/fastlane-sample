@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
+    
+    @State var manager = CLLocationManager()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        GoogleMapsView(manager: $manager)
     }
 }
 
@@ -19,7 +22,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-// rebase test 1
-// rebase test 2
-// rebase test 3

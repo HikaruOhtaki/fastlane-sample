@@ -9,11 +9,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: create AppStoreConnect AuthKey
-        run: |
-          mkdir ~/private_keys; echo "${{ secrets.ASC_API_KEY }}" | base64 -d > ~/private_keys/AuthKey_$ASC_KEY_ID.p8
-
       - name: Deploy Testflight
         env:
           MATCH_KEYCHAIN_NAME: "KEYCHAIN"

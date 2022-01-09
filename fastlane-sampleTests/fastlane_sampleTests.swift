@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import fastlane_sample
+@testable import MyToDo_dev
 
 class fastlane_sampleTests: XCTestCase {
 
