@@ -26,7 +26,6 @@ struct GoogleMapsView: UIViewRepresentable {
         manager.delegate = context.coordinator
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
-        //        manager.distanceFilter = 50
         manager.startUpdatingLocation()
         
         mapView.isMyLocationEnabled = true

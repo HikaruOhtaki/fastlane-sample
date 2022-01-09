@@ -33,7 +33,7 @@ struct fastlane_sampleApp: App {
 class AppDelegate: NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        if let googleMapsApiKey = KeyManager().getValue(key: "GoogleMapsApiKey") as? String {
+        if let googleMapsApiKey = KeyManager.getValue(key: "GoogleMapsApiKey") as? String {
             GMSServices.provideAPIKey(googleMapsApiKey)
         }
         FirebaseApp.configure()
