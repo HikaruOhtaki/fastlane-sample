@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F3B8816278B6DC900741406 /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B8815278B6DC900741406 /* CLLocationCoordinate2D+Extension.swift */; };
+		9F3B8819278B75B300741406 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 9F3B8818278B75B300741406 /* FloatingPanel */; };
+		9F3B881B278B75CC00741406 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 9F3B881A278B75CC00741406 /* FloatingPanel */; };
+		9F3B8822278B7CA700741406 /* FloatingPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B8820278B7CA700741406 /* FloatingPanelView.swift */; };
+		9F3B8823278B7CA700741406 /* FloatingPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B8820278B7CA700741406 /* FloatingPanelView.swift */; };
+		9F3B8824278B7CA700741406 /* View+floatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B8821278B7CA700741406 /* View+floatingPanel.swift */; };
+		9F3B8825278B7CA700741406 /* View+floatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B8821278B7CA700741406 /* View+floatingPanel.swift */; };
+		9F3B8827278B7F1D00741406 /* FloatingPanelContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B8826278B7F1D00741406 /* FloatingPanelContentView.swift */; };
+		9F3B8828278B7F1D00741406 /* FloatingPanelContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B8826278B7F1D00741406 /* FloatingPanelContentView.swift */; };
 		9F7695CD27886BF800506280 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7695CC27886BF700506280 /* NotificationService.swift */; };
 		9F7695D127886BF800506280 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9F7695CA27886BF700506280 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9FACF48827888A42001263B4 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9FACF48727888A42001263B4 /* FirebaseMessaging */; };
@@ -58,6 +67,16 @@
 		9FE42669278AB78300E32464 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FE42667278AB78300E32464 /* key.plist */; };
 		9FE4266B278AB7D500E32464 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4266A278AB7D500E32464 /* KeyManager.swift */; };
 		9FE4266C278AB7D500E32464 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4266A278AB7D500E32464 /* KeyManager.swift */; };
+		9FE42670278ABD0900E32464 /* Port.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4266F278ABD0900E32464 /* Port.swift */; };
+		9FE42671278ABD0900E32464 /* Port.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4266F278ABD0900E32464 /* Port.swift */; };
+		9FE42673278ABD1700E32464 /* PortRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE42672278ABD1700E32464 /* PortRepository.swift */; };
+		9FE42674278ABD1700E32464 /* PortRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE42672278ABD1700E32464 /* PortRepository.swift */; };
+		9FE42676278AC28E00E32464 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE42675278AC28E00E32464 /* ContentViewModel.swift */; };
+		9FE42677278AC28E00E32464 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE42675278AC28E00E32464 /* ContentViewModel.swift */; };
+		9FE4267C278B3B0D00E32464 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4267B278B3B0D00E32464 /* R.generated.swift */; };
+		9FE42680278B3B9A00E32464 /* R.staging.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4267E278B3B9A00E32464 /* R.staging.generated.swift */; };
+		9FE42683278B3BD000E32464 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE42682278B3BD000E32464 /* Rswift */; };
+		9FE42687278B3C4C00E32464 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE42686278B3C4C00E32464 /* Rswift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,9 +133,23 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FE4268B278B3C4C00E32464 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9F3B8815278B6DC900741406 /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
+		9F3B8820278B7CA700741406 /* FloatingPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingPanelView.swift; sourceTree = "<group>"; };
+		9F3B8821278B7CA700741406 /* View+floatingPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+floatingPanel.swift"; sourceTree = "<group>"; };
+		9F3B8826278B7F1D00741406 /* FloatingPanelContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingPanelContentView.swift; sourceTree = "<group>"; };
 		9F7695C5278843ED00506280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9F7695CA27886BF700506280 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7695CC27886BF700506280 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -141,6 +174,11 @@
 		9FBBB396276BA5CF00D09432 /* fastlane_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastlane_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9FE42667278AB78300E32464 /* key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = key.plist; sourceTree = "<group>"; };
 		9FE4266A278AB7D500E32464 /* KeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
+		9FE4266F278ABD0900E32464 /* Port.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Port.swift; sourceTree = "<group>"; };
+		9FE42672278ABD1700E32464 /* PortRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortRepository.swift; sourceTree = "<group>"; };
+		9FE42675278AC28E00E32464 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		9FE4267B278B3B0D00E32464 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		9FE4267E278B3B9A00E32464 /* R.staging.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.staging.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,10 +194,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE42687278B3C4C00E32464 /* Rswift in Frameworks */,
 				9FE4265E278A938D00E32464 /* GoogleMaps in Frameworks */,
 				9FE42664278A938D00E32464 /* GoogleMapsM4B in Frameworks */,
 				9FACF49827888DC4001263B4 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				9FACF49927888DC4001263B4 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				9F3B881B278B75CC00741406 /* FloatingPanel in Frameworks */,
 				9FE42660278A938D00E32464 /* GoogleMapsBase in Frameworks */,
 				9FACF49A27888DC4001263B4 /* FirebaseMessaging in Frameworks */,
 				9FE42662278A938D00E32464 /* GoogleMapsCore in Frameworks */,
@@ -183,10 +223,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE42683278B3BD000E32464 /* Rswift in Frameworks */,
 				9FDCCA7D278885360056B717 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				9FDCCA7F278885360056B717 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				9FDCCA85278885360056B717 /* FirebaseMessaging in Frameworks */,
 				9FDCCA81278885360056B717 /* FirebaseFunctions in Frameworks */,
+				9F3B8819278B75B300741406 /* FloatingPanel in Frameworks */,
 				9FDCCA79278885360056B717 /* FirebaseAuth in Frameworks */,
 				9FACF4EB278A91EB001263B4 /* GoogleMapsBase in Frameworks */,
 				9FACF4EF278A91EB001263B4 /* GoogleMapsM4B in Frameworks */,
@@ -215,6 +257,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F3B8814278B6DAA00741406 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9F3B8815278B6DC900741406 /* CLLocationCoordinate2D+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9F3B881F278B7C8800741406 /* FloatingPanel */ = {
+			isa = PBXGroup;
+			children = (
+				9F3B8820278B7CA700741406 /* FloatingPanelView.swift */,
+				9F3B8821278B7CA700741406 /* View+floatingPanel.swift */,
+			);
+			path = FloatingPanel;
+			sourceTree = "<group>";
+		};
 		9F7695CB27886BF700506280 /* NotificationService */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,17 +319,24 @@
 		9FBBB378276BA5CE00D09432 /* fastlane-sample */ = {
 			isa = PBXGroup;
 			children = (
+				9F3B881F278B7C8800741406 /* FloatingPanel */,
+				9F3B8814278B6DAA00741406 /* Extension */,
+				9FE4266E278ABCF300E32464 /* Entity */,
+				9FE4266D278ABCE100E32464 /* Repository */,
+				9FBBB379276BA5CE00D09432 /* fastlane_sampleApp.swift */,
+				9FBBB37B276BA5CE00D09432 /* ContentView.swift */,
+				9FE42675278AC28E00E32464 /* ContentViewModel.swift */,
+				9FACF4E4278A9141001263B4 /* GoogleMapView.swift */,
+				9F3B8826278B7F1D00741406 /* FloatingPanelContentView.swift */,
+				9FE4266A278AB7D500E32464 /* KeyManager.swift */,
+				9FE4267A278B3B0D00E32464 /* generated */,
+				9FBBB37D276BA5CF00D09432 /* Assets.xcassets */,
 				9FACF4DC278A04FE001263B4 /* GoogleService-Info-prod.plist */,
 				9FACF4A927888FD2001263B4 /* GoogleService-Info-stg.plist */,
 				9F7695D827886C9100506280 /* fastlane-sample.entitlements */,
 				9F7695D727886C8500506280 /* fastlane-sampleRelease.entitlements */,
 				9F7695C5278843ED00506280 /* Info.plist */,
 				9FE42667278AB78300E32464 /* key.plist */,
-				9FBBB379276BA5CE00D09432 /* fastlane_sampleApp.swift */,
-				9FBBB37B276BA5CE00D09432 /* ContentView.swift */,
-				9FACF4E4278A9141001263B4 /* GoogleMapView.swift */,
-				9FE4266A278AB7D500E32464 /* KeyManager.swift */,
-				9FBBB37D276BA5CF00D09432 /* Assets.xcassets */,
 				9FBBB37F276BA5CF00D09432 /* Preview Content */,
 			);
 			path = "fastlane-sample";
@@ -301,6 +367,31 @@
 			path = "fastlane-sampleUITests";
 			sourceTree = "<group>";
 		};
+		9FE4266D278ABCE100E32464 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9FE42672278ABD1700E32464 /* PortRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9FE4266E278ABCF300E32464 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9FE4266F278ABD0900E32464 /* Port.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9FE4267A278B3B0D00E32464 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				9FE4267B278B3B0D00E32464 /* R.generated.swift */,
+				9FE4267E278B3B9A00E32464 /* R.staging.generated.swift */,
+			);
+			path = generated;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,11 +419,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FACF4A427888DC4001263B4 /* Build configuration list for PBXNativeTarget "fastlane-sample-stg" */;
 			buildPhases = (
+				9FE42679278B38A000E32464 /* R.swift */,
+				9FACF4AD2788908D001263B4 /* GoogleService */,
 				9FACF49427888DC4001263B4 /* Sources */,
 				9FACF49727888DC4001263B4 /* Frameworks */,
 				9FACF49F27888DC4001263B4 /* Resources */,
 				9FACF4A227888DC4001263B4 /* Embed App Extensions */,
-				9FACF4AD2788908D001263B4 /* ShellScript */,
+				9FE4268B278B3C4C00E32464 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -353,6 +446,8 @@
 				9FE42661278A938D00E32464 /* GoogleMapsCore */,
 				9FE42663278A938D00E32464 /* GoogleMapsM4B */,
 				9FE42665278A938D00E32464 /* GooglePlaces */,
+				9FE42686278B3C4C00E32464 /* Rswift */,
+				9F3B881A278B75CC00741406 /* FloatingPanel */,
 			);
 			productName = "fastlane-sample";
 			productReference = 9FACF4A727888DC4001263B4 /* fastlane-sample-stg.app */;
@@ -382,11 +477,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FBBB39A276BA5CF00D09432 /* Build configuration list for PBXNativeTarget "fastlane-sample" */;
 			buildPhases = (
+				9FE42678278B388000E32464 /* R.swift */,
+				9FACF4AC27888FFF001263B4 /* GoogleService */,
 				9FBBB372276BA5CE00D09432 /* Sources */,
 				9FBBB373276BA5CE00D09432 /* Frameworks */,
 				9FBBB374276BA5CE00D09432 /* Resources */,
 				9F7695D527886BF800506280 /* Embed App Extensions */,
-				9FACF4AC27888FFF001263B4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -407,6 +503,8 @@
 				9FACF4EC278A91EB001263B4 /* GoogleMapsCore */,
 				9FACF4EE278A91EB001263B4 /* GoogleMapsM4B */,
 				9FACF4F0278A91EB001263B4 /* GooglePlaces */,
+				9FE42682278B3BD000E32464 /* Rswift */,
+				9F3B8818278B75B300741406 /* FloatingPanel */,
 			);
 			productName = "fastlane-sample";
 			productReference = 9FBBB376276BA5CE00D09432 /* MyToDo.dev.app */;
@@ -486,6 +584,8 @@
 			packageReferences = (
 				9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */,
+				9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift" */,
+				9F3B8817278B75B200741406 /* XCRemoteSwiftPackageReference "FloatingPanel" */,
 			);
 			productRefGroup = 9FBBB377276BA5CE00D09432 /* Products */;
 			projectDirPath = "";
@@ -557,7 +657,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9FACF4AC27888FFF001263B4 /* ShellScript */ = {
+		9FACF4AC27888FFF001263B4 /* GoogleService */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -566,6 +666,7 @@
 			);
 			inputPaths = (
 			);
+			name = GoogleService;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -574,7 +675,7 @@
 			shellPath = /bin/sh;
 			shellScript = "cp \"${PROJECT_DIR}/${PROJECT_NAME}/GoogleService-Info-prod.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n";
 		};
-		9FACF4AD2788908D001263B4 /* ShellScript */ = {
+		9FACF4AD2788908D001263B4 /* GoogleService */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -583,6 +684,7 @@
 			);
 			inputPaths = (
 			);
+			name = GoogleService;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -590,6 +692,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cp \"${PROJECT_DIR}/${PROJECT_NAME}/GoogleService-Info-stg.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n";
+		};
+		9FE42678278B388000E32464 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/generated/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which rswift >/dev/null; then\nrswift generate \"$SRCROOT/generated/R.generated.swift\"\nelse\necho \"warning: rswift not installed\"\nfi\n";
+		};
+		9FE42679278B38A000E32464 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/generated/R.staging.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which rswift >/dev/null; then\nrswift generate \"$SRCROOT/generated/R.staging.generated.swift\"\nelse\necho \"warning: rswift not installed\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -606,10 +748,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F3B8823278B7CA700741406 /* FloatingPanelView.swift in Sources */,
+				9F3B8828278B7F1D00741406 /* FloatingPanelContentView.swift in Sources */,
+				9FE42674278ABD1700E32464 /* PortRepository.swift in Sources */,
+				9FE42680278B3B9A00E32464 /* R.staging.generated.swift in Sources */,
 				9FACF4E6278A9141001263B4 /* GoogleMapView.swift in Sources */,
 				9FACF49527888DC4001263B4 /* ContentView.swift in Sources */,
+				9F3B8825278B7CA700741406 /* View+floatingPanel.swift in Sources */,
+				9FE42677278AC28E00E32464 /* ContentViewModel.swift in Sources */,
 				9FACF49627888DC4001263B4 /* fastlane_sampleApp.swift in Sources */,
 				9FE4266C278AB7D500E32464 /* KeyManager.swift in Sources */,
+				9FE42671278ABD0900E32464 /* Port.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,10 +774,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE42673278ABD1700E32464 /* PortRepository.swift in Sources */,
 				9FACF4E5278A9141001263B4 /* GoogleMapView.swift in Sources */,
 				9FBBB37C276BA5CE00D09432 /* ContentView.swift in Sources */,
+				9F3B8827278B7F1D00741406 /* FloatingPanelContentView.swift in Sources */,
+				9F3B8822278B7CA700741406 /* FloatingPanelView.swift in Sources */,
+				9FE4267C278B3B0D00E32464 /* R.generated.swift in Sources */,
+				9FE42676278AC28E00E32464 /* ContentViewModel.swift in Sources */,
 				9FBBB37A276BA5CE00D09432 /* fastlane_sampleApp.swift in Sources */,
 				9FE4266B278AB7D500E32464 /* KeyManager.swift in Sources */,
+				9FE42670278ABD0900E32464 /* Port.swift in Sources */,
+				9F3B8824278B7CA700741406 /* View+floatingPanel.swift in Sources */,
+				9F3B8816278B6DC900741406 /* CLLocationCoordinate2D+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1228,6 +1385,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9F3B8817278B75B200741406 /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scenee/FloatingPanel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -1260,9 +1425,27 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9F3B8818278B75B300741406 /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F3B8817278B75B200741406 /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
+		};
+		9F3B881A278B75CC00741406 /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F3B8817278B75B200741406 /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
+		};
 		9FACF48727888A42001263B4 /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -1392,6 +1575,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
 			productName = GooglePlaces;
+		};
+		9FE42682278B3BD000E32464 /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+		9FE42686278B3C4C00E32464 /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

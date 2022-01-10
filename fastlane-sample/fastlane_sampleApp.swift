@@ -8,14 +8,18 @@
 import SwiftUI
 import Firebase
 import GoogleMaps
+import FloatingPanel
 
 @main
 struct fastlane_sampleApp: App {
-    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
+        let mapView = GMSMapView(frame: .zero)
         WindowGroup {
-            ContentView().onAppear {
+            ContentView(mapView: mapView, contentViewModel: ContentViewModel(mapView: mapView)).floatingPanel(delegate: SearchPanelPhoneDelegate(), { proxy in
+                FloatingPanelContentView(proxy: proxy)
+            })
+                .onAppear {
                 let db = Firestore.firestore()
                 db.collection("users").document("KOLyuInP6CVcM4GfZlmc").getDocument { snapshot, error in
                     if let error = error {
@@ -31,36 +35,21 @@ struct fastlane_sampleApp: App {
 }
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         if let googleMapsApiKey = KeyManager.getValue(key: "GoogleMapsApiKey") as? String {
             GMSServices.provideAPIKey(googleMapsApiKey)
         }
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
-        if #available(iOS 10.0, *) {
-            UNUserNotificationCenter.current().delegate = self
-            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-            UNUserNotificationCenter.current().requestAuthorization(
-                options: authOptions,
-                completionHandler: { granted, _ in
-                    if granted {
-                        // TODO subscribe to fcm topic, etc...
-                    }
-                }
-            )
-        } else {
-            let settings: UIUserNotificationSettings
-            = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-            application.registerUserNotificationSettings(settings)
-        }
+        UNUserNotificationCenter.current().delegate = self
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: authOptions, completionHandler: { _, _ in })
         application.registerForRemoteNotifications()
-        
         return true
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        print("Oh no! Failed to register for remote notifications with error \(error)")
+        print("Failed to register for remote notifications with error \(error)")
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
@@ -75,8 +64,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 extension AppDelegate: MessagingDelegate {
     @objc func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
         print("Firebase token: \(String(describing: fcmToken))")
-        // let dataDict:[String: String] = ["token": fcmToken ?? ""]
-        // NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
+         let dataDict:[String: String] = ["token": fcmToken ?? ""]
+         NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
     }
 }
 
@@ -99,15 +88,20 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         withCompletionHandler completionHandler: @escaping () -> Void
     ) {
         let userInfo = response.notification.request.content.userInfo
-        // 以下の用にしてnotification centerを使って通知し、
-        // view側では以下のメソッドを使って、処理を続行します。
-        // onReceive(NotificationCenter.default.publisher(for: Notification.Name("didReceiveRemoteNotification")))
         NotificationCenter.default.post(
             name: Notification.Name("didReceiveRemoteNotification"),
             object: nil,
             userInfo: userInfo
         )
         completionHandler()
+    }
+}
+
+final class SearchPanelPhoneDelegate: FloatingPanelControllerDelegate {
+    func floatingPanelWillBeginDragging(_ vc: FloatingPanelController) {
+        if vc.position == .full {
+            print("full")
+        }
     }
 }
 

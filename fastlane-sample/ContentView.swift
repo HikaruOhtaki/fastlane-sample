@@ -6,19 +6,53 @@
 //
 
 import SwiftUI
+import GoogleMaps
 import CoreLocation
+import FirebaseFirestoreSwift
 
 struct ContentView: View {
-    
-    @State var manager = CLLocationManager()
-    
+    let mapView: GMSMapView
+    @ObservedObject var contentViewModel: ContentViewModel
+            
     var body: some View {
-        GoogleMapsView(manager: $manager)
+        ZStack {
+            GoogleMapsView(
+                mapView: mapView,
+                onSelectPort: { port in
+                    contentViewModel.setSelectedPort(port: port)
+                },
+                onUpdateIndicatorArea: { geoPoint, radius in
+                    contentViewModel.setIndicatorArea(location: geoPoint, radius: radius)
+                }
+            ).edgesIgnoringSafeArea(.all)
+            
+//            VStack {
+//                Spacer()
+//                HStack {
+//                    Spacer()
+//                    Button(action: {
+//                        contentViewModel.setPortMarkers()
+//                    }){
+//                        Text("ポートを表示")
+//                            .fontWeight(.bold)
+//                            .padding()
+//                            .background(Color.purple)
+//                            .cornerRadius(40)
+//                            .foregroundColor(.white)
+//                    }.padding()
+//                }
+//            }
+        }.onAppear {
+            Task {
+                await contentViewModel.setPortMarkers()
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let mapView = GMSMapView(frame: .zero)
+        ContentView(mapView: mapView, contentViewModel: .init(mapView: mapView))
     }
 }
