@@ -8,6 +8,10 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - name: ls directory
+      run:
+        ls ~/Library/Developer/Xcode/DerivedData
+
       - uses: actions/checkout@v2
       - name: Deploy Testflight
         env:
