@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: ls directory
-        run: ls ~/Library/Developer/Xcode/DerivedData
+        run: ls ~/Library/Developer/Xcode
 
       - uses: actions/checkout@v2
       - name: Deploy Testflight
