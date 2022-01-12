@@ -9,8 +9,9 @@ jobs:
 
     steps:
       - name: ls directory
-        run: ls
-
+        run: ls /Users/runner/Library/Developer/Xcode/
+      - name: ls dl
+        run: echo "$(ls)"
       - uses: actions/checkout@v2
       - name: Deploy Testflight
         env:
