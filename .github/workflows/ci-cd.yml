@@ -19,5 +19,5 @@ jobs:
         run: |
           echo "$(ls)"
           ls /Users/runner/
-          ls /Users/runner/Library/Developer/Xcode/
+          ls /Users/runner/Library/
           fastlane beta
