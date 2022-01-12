@@ -17,5 +17,5 @@ jobs:
           USERNAME: "HikaruOhtaki"
           MATCH_PASSWORD: '${{ secrets.MATCH_PASSWORD }}'
         run: |
-          echo "$(ls /Users/runner/Library/)"
+          echo "$(ls /Users/runner/Library/Developer/)"
           fastlane beta
