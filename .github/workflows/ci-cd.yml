@@ -3,6 +3,9 @@ name: CICD
 on:
   workflow_dispatch:
 
+env:
+  DEVELOPER_DIR: /Applications/Xcode_13.2.1.app
+
 jobs:
   build:
     runs-on: macos-latest

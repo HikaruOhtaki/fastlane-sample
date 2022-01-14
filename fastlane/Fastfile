@@ -4,6 +4,10 @@ platform :ios do
   desc "deploy beta to appstore"
   lane :beta do
 
+    puts ENV["DEVELOPER_DIR"]
+
+    xcode_select(ENV["DEVELOPER_DIR"])
+
     create_keychain(
       name: "ohtaki",
       password: "19990220",
