@@ -582,9 +582,9 @@
 			);
 			mainGroup = 9FBBB36D276BA5CE00D09432;
 			packageReferences = (
-				9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
 				9FACF4E7278A91EB001263B4 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */,
-				9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift" */,
+				9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift.Library" */,
 				9F3B8817278B75B200741406 /* XCRemoteSwiftPackageReference "FloatingPanel" */,
 			);
 			productRefGroup = 9FBBB377276BA5CE00D09432 /* Products */;
@@ -707,7 +707,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/generated/R.generated.swift,
+				"$SRCROOT/generated/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -727,7 +727,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/generated/R.staging.generated.swift,
+				"$SRCROOT/generated/R.staging.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -835,8 +835,8 @@
 		9F7695D327886BF800506280 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YFYG54KA39;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -852,7 +852,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ohtaki.fastlane-sample.NotificationService";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore ohtaki.fastlane-sample.NotificationService";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -864,8 +864,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationServiceRelease.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YFYG54KA39;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -881,7 +881,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ohtaki.fastlane-sample.NotificationService";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore ohtaki.fastlane-sample.NotificationService";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1141,8 +1141,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "fastlane-sample/fastlane-sample.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"fastlane-sample/Preview Content\"";
 				DEVELOPMENT_TEAM = YFYG54KA39;
@@ -1162,7 +1162,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ohtaki.fastlane-sample";
 				PRODUCT_NAME = MyToDo.dev;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore ohtaki.fastlane-sample";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1176,8 +1176,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "fastlane-sample/fastlane-sampleRelease.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"fastlane-sample/Preview Content\"";
 				DEVELOPMENT_TEAM = YFYG54KA39;
@@ -1197,7 +1197,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ohtaki.fastlane-sample";
 				PRODUCT_NAME = MyToDo;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore ohtaki.fastlane-sample";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1393,7 +1393,7 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -1401,7 +1401,7 @@
 				minimumVersion = 8.0.0;
 			};
 		};
-		9FACF4CE2788B913001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		9FACF4CE2788B913001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -1417,7 +1417,7 @@
 				minimumVersion = 6.0.0;
 			};
 		};
-		9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -1425,7 +1425,7 @@
 				minimumVersion = 8.0.0;
 			};
 		};
-		9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+		9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift.Library" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
 			requirement = {
@@ -1448,47 +1448,47 @@
 		};
 		9FACF48727888A42001263B4 /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseMessaging;
 		};
 		9FACF48C27888DC4001263B4 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseAuth;
 		};
 		9FACF48E27888DC4001263B4 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFirestore;
 		};
 		9FACF48F27888DC4001263B4 /* FirebaseFirestoreCombine-Community */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = "FirebaseFirestoreCombine-Community";
 		};
 		9FACF49027888DC4001263B4 /* FirebaseFirestoreSwift-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = "FirebaseFirestoreSwift-Beta";
 		};
 		9FACF49127888DC4001263B4 /* FirebaseFunctions */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFunctions;
 		};
 		9FACF49227888DC4001263B4 /* FirebaseFunctionsCombine-Community */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = "FirebaseFunctionsCombine-Community";
 		};
 		9FACF49327888DC4001263B4 /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FACF48D27888DC4001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseMessaging;
 		};
 		9FACF4CD2788B913001263B4 /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FACF4CE2788B913001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FACF4CE2788B913001263B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseMessaging;
 		};
 		9FACF4E8278A91EB001263B4 /* GoogleMaps */ = {
@@ -1518,37 +1518,37 @@
 		};
 		9FDCCA78278885360056B717 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseAuth;
 		};
 		9FDCCA7A278885360056B717 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFirestore;
 		};
 		9FDCCA7C278885360056B717 /* FirebaseFirestoreCombine-Community */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = "FirebaseFirestoreCombine-Community";
 		};
 		9FDCCA7E278885360056B717 /* FirebaseFirestoreSwift-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = "FirebaseFirestoreSwift-Beta";
 		};
 		9FDCCA80278885360056B717 /* FirebaseFunctions */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFunctions;
 		};
 		9FDCCA82278885360056B717 /* FirebaseFunctionsCombine-Community */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = "FirebaseFunctionsCombine-Community";
 		};
 		9FDCCA84278885360056B717 /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9FDCCA77278885360056B717 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseMessaging;
 		};
 		9FE4265D278A938D00E32464 /* GoogleMaps */ = {
@@ -1578,12 +1578,12 @@
 		};
 		9FE42682278B3BD000E32464 /* Rswift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift" */;
+			package = 9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift.Library" */;
 			productName = Rswift;
 		};
 		9FE42686278B3C4C00E32464 /* Rswift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift" */;
+			package = 9FE42681278B3BD000E32464 /* XCRemoteSwiftPackageReference "R.swift.Library" */;
 			productName = Rswift;
 		};
 /* End XCSwiftPackageProductDependency section */
