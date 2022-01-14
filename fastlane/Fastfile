@@ -4,15 +4,11 @@ platform :ios do
   desc "deploy beta to appstore"
   lane :beta do
 
-    sample
-
-    puts(Dir.glob("Applications/"))
-
-    puts(ENV["DEVELOPER_DIR"])
-
     # xcversion(version: "13.1")
 
     xcode_select("/Applications/Xcode.app")
+
+    ensure_xcode_version(version: "13.2.1")
 
     create_keychain(
       name: "ohtaki",
