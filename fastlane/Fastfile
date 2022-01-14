@@ -6,7 +6,7 @@ platform :ios do
 
     # xcversion(version: "13.1")
 
-    xcode_select("/Applications/Xcode.app")
+    xcode_select("/Applications/Xcode_13.2.1.app")
 
     ensure_xcode_version(version: "13.2.1")
 
